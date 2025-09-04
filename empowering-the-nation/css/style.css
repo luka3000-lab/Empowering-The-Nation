@@ -1,0 +1,33 @@
+:root{
+  --brand:#0f7a4f;
+  --accent:#15a06a;
+  --bg:#ffffff;
+  --muted:#5d6b63;
+  --text:#1a1f1c;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, Arial, sans-serif;background:#f6fff9;color:var(--text)}
+.header{background:transparent;padding:18px 0;border-bottom:1px solid #eef7f1}
+.container{max-width:1000px;margin:0 auto;padding:0 18px}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;flex-direction:column;align-items:center;gap:6px}
+.brand img{width:140px;height:auto}
+.menu{display:flex;gap:14px;align-items:center}
+.menu a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:700}
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 18px;margin:18px 0;border-radius:12px;background:linear-gradient(180deg,#e7fff1,#f6fff9);border:1px solid #e0f4ea}
+.hero h1{margin:10px 0;font-size:28px;color:var(--brand);font-weight:800}
+.hero p{margin:6px 0;color:var(--muted)}
+.cta{display:flex;gap:12px;margin-top:16px}
+.button{background:var(--brand);color:#fff;padding:10px 16px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+.button.secondary{background:#fff;color:var(--brand);border:1px solid #d1f0e1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.card{background:#fff;padding:14px;border-radius:12px;border:1px solid #e8f2ec}
+.card h3{margin:6px 0 10px;color:var(--brand);font-size:18px}
+.meta{color:var(--muted);font-weight:600}
+.footer{margin:28px 0;padding:18px 0;border-top:1px solid #e6f2ea;color:#47765a;font-size:14px;text-align:center}
+.section{background:#fff;padding:16px;border-radius:12px;border:1px solid #e8f2ec;margin:12px 0}
+.form-row{display:flex;gap:12px;flex-wrap:wrap}
+.input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #d9e9e1}
+.small{font-size:13px;color:var(--muted)}
+.back{color:var(--brand);font-weight:700;text-decoration:none}
+@media(max-width:720px){.nav{flex-direction:column;gap:12px}.brand{align-items:center}}

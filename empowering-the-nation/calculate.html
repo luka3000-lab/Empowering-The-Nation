@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculate Fees - Empowering the Nation</title>
+<meta name="description" content="Vocational training for domestic workers and gardeners.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="logo">
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="six-month.html">6-Month Courses</a>
+      <a href="six-week.html">6-Week Courses</a>
+      <a href="calculate.html">Calculate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<section class="section">
+  <h2>Calculate Fees</h2>
+  <p class="small">Select the courses you want and choose the course type.</p>
+  <form onsubmit="event.preventDefault(); calculateFees();" id="calc-form">
+    <div class="section card">
+      <h3>Course Type</h3>
+      <label><input type="radio" name="courseType" value="sixWeek"> Six-Week (R750)</label><br>
+      <label><input type="radio" name="courseType" value="sixMonth"> Six-Month (R1500)</label>
+    </div>
+    <div class="section card">
+      <h3>Courses</h3><label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="first-aid"> First Aid</label>
+<label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="sewing"> Sewing</label>
+<label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="life-skills"> Life Skills</label>
+<label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="landscaping"> Landscaping</label>
+<label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="child-minding"> Child Minding</label>
+<label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="garden-maintenance"> Garden Maintenance</label>
+<label style="display:block;margin:6px 0"><input type="checkbox" name="course" value="cooking"> Cooking</label>
+
+    </div>
+    <div style="display:flex;gap:12px;align-items:center;margin-top:12px">
+      <button class="button" type="button" onclick="calculateFees()">Calculate</button>
+      <button class="button secondary" type="button" onclick="clearCalc()">Clear</button>
+      <div id="calc-error" class="small" style="color:#b00020;display:none"></div>
+    </div>
+    <div id="calc-result" class="section" style="display:none;margin-top:12px;font-weight:700"></div>
+  </form>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">Empowering the Nation • Johannesburg • © 2025</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
