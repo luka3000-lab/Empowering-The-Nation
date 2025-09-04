@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.empoweringthenation">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Empowering the Nation"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EmpoweringTheNation">
+
+        <!-- Main/Home Activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Summary Pages -->
+        <activity android:name=".SixMonthActivity" />
+        <activity android:name=".SixWeekActivity" />
+
+        <!-- Detail Pages -->
+        <activity android:name=".FirstAidActivity" />
+        <activity android:name=".SewingActivity" />
+        <activity android:name=".LifeSkillsActivity" />
+        <activity android:name=".LandscapingActivity" />
+        <activity android:name=".ChildMindingActivity" />
+        <activity android:name=".GardenMaintenanceActivity" />
+        <activity android:name=".CookingActivity" />
+
+        <!-- Contact Page -->
+        <activity android:name=".ContactActivity" />
+
+        <!-- Calculator Page -->
+        <activity android:name=".CalculateActivity" />
+
+    </application>
+</manifest>

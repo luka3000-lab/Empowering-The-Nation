@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spinnerCourseType" type="id" />
+    <item name="inputCourses" type="id" />
+    <item name="btnCalculate" type="id" />
+    <item name="txtResult" type="id" />
+</resources>

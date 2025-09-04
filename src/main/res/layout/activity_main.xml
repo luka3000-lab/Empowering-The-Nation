@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C80F7A4F"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="244dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="476dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:text="@string/upskilling_domestic_workers_gardeners"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:paddingTop="8dp"
+        android:text="@string/hands_on_learning_that_fits_busy_schedules_build_employable_skills_and_confidence"
+        android:textColor="#090909"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSixMonth"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/six_month_courses"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnSixWeek"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/six_week_courses"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/calculate_fees"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnContact"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/contact_us"
+        android:textColor="#000000" />
+</LinearLayout>
